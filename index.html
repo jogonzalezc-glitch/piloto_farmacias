@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4c7c2a36f757743f8a89a33347f2d6cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4c7c2a36f757743f8a89a33347f2d6cc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4c7c2a36f757743f8a89a33347f2d6cc = L.map(
+                "map_4c7c2a36f757743f8a89a33347f2d6cc",
+                {
+                    center: [-33.6117, -70.5758],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_4c7c2a36f757743f8a89a33347f2d6cc);
+
+            
+
+        
+    
+            var tile_layer_a6f941f733ab745482dcae7af82bc340 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a6f941f733ab745482dcae7af82bc340.addTo(map_4c7c2a36f757743f8a89a33347f2d6cc);
+        
+    
+            var marker_9be548b73b7ac5be65fe222e5344484e = L.marker(
+                [-33.608347, -70.576046],
+                {
+}
+            ).addTo(map_4c7c2a36f757743f8a89a33347f2d6cc);
+        
+    
+            var icon_efa719e76db3277bd0bcc59f168a21a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1e99d98d4f0a1c5da10bc27c748a651 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a181da6c4b167a8ee3fb6afafd55a9bc = $(`<div id="html_a181da6c4b167a8ee3fb6afafd55a9bc" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; width: 220px;">                         <h4 style="color: #d9534f; margin-bottom: 5px;">🚨 URGENCIA - CRUZ VERDE</h4>                         <p><b>📍 Dirección:</b> AVENIDA CONCHA Y TORO 398</p>                         <p><b>⏰ Horario:</b> 00:00:00 a 23:59:00</p>                         <p><b>📞 Teléfono:</b> 28504068</p>                         <a href="https://google.com-33.608347,-70.576046" target="_blank"                             style="display: inline-block; padding: 5px 10px; color: white; background-color: #0275d8; text-decoration: none; border-radius: 4px; font-size: 12px; margin-top: 5px;">                            Ver Ruta en Teléfono                         </a>                     </div>                     </div>`)[0];
+                popup_e1e99d98d4f0a1c5da10bc27c748a651.setContent(html_a181da6c4b167a8ee3fb6afafd55a9bc);
+            
+        
+
+        marker_9be548b73b7ac5be65fe222e5344484e.bindPopup(popup_e1e99d98d4f0a1c5da10bc27c748a651)
+        ;
+
+        
+    
+    
+            marker_9be548b73b7ac5be65fe222e5344484e.bindTooltip(
+                `<div>
+                     URGENCIA - CRUZ VERDE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9be548b73b7ac5be65fe222e5344484e.setIcon(icon_efa719e76db3277bd0bcc59f168a21a2);
+            
+    
+            var marker_0ce8bf21b14ce17d76d4a8c99314854b = L.marker(
+                [-33.5867011, -70.58001],
+                {
+}
+            ).addTo(map_4c7c2a36f757743f8a89a33347f2d6cc);
+        
+    
+            var icon_c83903165bc4f4003b7494749d5b5392 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0a6edf91eb0ea710acacdaa9344af43 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_51d895434b74ab73b5eea8f7a1491a37 = $(`<div id="html_51d895434b74ab73b5eea8f7a1491a37" style="width: 100.0%; height: 100.0%;">                     <div style="font-family: Arial, sans-serif; width: 220px;">                         <h4 style="color: #d9534f; margin-bottom: 5px;">🚨 URGENCIA - TITAN</h4>                         <p><b>📍 Dirección:</b> AVENIDA CONCHA Y TORO 2757</p>                         <p><b>⏰ Horario:</b> 00:00:00 a 23:59:00</p>                         <p><b>📞 Teléfono:</b> </p>                         <a href="https://google.com-33.5867011,-70.58001" target="_blank"                             style="display: inline-block; padding: 5px 10px; color: white; background-color: #0275d8; text-decoration: none; border-radius: 4px; font-size: 12px; margin-top: 5px;">                            Ver Ruta en Teléfono                         </a>                     </div>                     </div>`)[0];
+                popup_d0a6edf91eb0ea710acacdaa9344af43.setContent(html_51d895434b74ab73b5eea8f7a1491a37);
+            
+        
+
+        marker_0ce8bf21b14ce17d76d4a8c99314854b.bindPopup(popup_d0a6edf91eb0ea710acacdaa9344af43)
+        ;
+
+        
+    
+    
+            marker_0ce8bf21b14ce17d76d4a8c99314854b.bindTooltip(
+                `<div>
+                     URGENCIA - TITAN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ce8bf21b14ce17d76d4a8c99314854b.setIcon(icon_c83903165bc4f4003b7494749d5b5392);
+            
+</script>
+</html>
