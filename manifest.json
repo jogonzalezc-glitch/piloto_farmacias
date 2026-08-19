@@ -1,21 +1,23 @@
 {
-    "short_name": "FarmaciasTurno",
+    "short_name": "Farmacias",
     "name": "Farmacias de Turno Chile",
     "icons": [
         {
             "src": "https://cdn-icons-png.flaticon.com/512/3063/3063822.png",
             "type": "image/png",
-            "sizes": "192x192"
+            "sizes": "192x192",
+            "purpose": "any maskable"
         },
         {
             "src": "https://cdn-icons-png.flaticon.com/512/3063/3063822.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "any maskable"
         }
     ],
     "start_url": "./index.html",
     "background_color": "#ffffff",
     "theme_color": "#d9534f",
     "display": "standalone",
-    "orientation": "portrait"
+    "scope": "./"
 }
